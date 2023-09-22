@@ -4,7 +4,10 @@ let = ['M', 'D', 'C', 'L', 'X','V', 'I']
 deco = []
 union = []
 count = []
-
+valores = []
+repetidos = [0]
+resu = set()
+s = 0
 for sim in ask: 
     deco.append(sim)
 
@@ -21,27 +24,22 @@ for i in range(len(deco)):
             valor = valor + union[j][1]
             count.append(valor)
 
-soma = 0 
+#count.sort(key=int)
+for r in count:
+    if r not in valores:
+        valores.append(r)
+    else:
+        repetidos.append(r)
 
-for z in range(len(union) -1,-1,-1):
-    for n in range(len(count)):
-        if count[n] == union[z][1]:
-            soma = count[n] - soma
-        
-            
-loop = 0 
+for l in range(len(valores)):
+    for h in range(len(repetidos)):
+        if repetidos[h] == valores[l]:
+            del repetidos[0]
+            s = repetidos[0] + valores[l]
+        else:
+            s = valores[l] - s
+           
 
-for d in range(len(count)):
-    loop = count[d] + loop 
-    
-    
-    
-    
+           
+print(s)
 
-
-print(loop)
-print(union)
-print(deco)
-print(valor)
-print(soma)
-print(count)
