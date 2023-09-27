@@ -1,4 +1,4 @@
-nome = input('Digite uma palavra:')
+nome = str(input('Digite uma palavra:'))
 lista_nome_separado = []
 possi = 1
 
