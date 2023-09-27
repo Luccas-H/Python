@@ -1,7 +1,6 @@
 n = str(input("Digite uma palavra(em minúsculo): "))
 letras = []
 
-
 for i in n:
     letras.append(i)
 
