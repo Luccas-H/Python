@@ -43,3 +43,4 @@ for l in range(len(valores)):
            
 print(s)
 
+#tentar percorrer repetidos duas vezes pra ele pegar mais de uma valor
