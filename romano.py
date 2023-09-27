@@ -6,7 +6,7 @@ union = []
 count = []
 valores = []
 repetidos = [0]
-resu = set()
+
 s = 0
 for sim in ask: 
     deco.append(sim)
@@ -24,7 +24,6 @@ for i in range(len(deco)):
             valor = valor + union[j][1]
             count.append(valor)
 
-#count.sort(key=int)
 for r in count:
     if r not in valores:
         valores.append(r)
