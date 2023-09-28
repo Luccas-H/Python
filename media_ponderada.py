@@ -9,8 +9,6 @@ while i!=3:
     lista_notas.append(n)
     lista_pesos.append(p)
     i =  i + 1 
-print(lista_notas)
-print(lista_pesos)
 
 for i in range(len(lista_notas)):
     tupla = (lista_notas[i], lista_pesos[i])
