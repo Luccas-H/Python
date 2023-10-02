@@ -1,3 +1,4 @@
+#Não está pronto ainda!!!!
 list_num = []
 list_resu = []
 n=0
