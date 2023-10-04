@@ -2,7 +2,6 @@ n = int(input("A partir da tabela:\n 1->Escriturário\n 2->Secretário\n 3->Caix
 
 if  n>5 or n<1:
     print("ERRO.......\n O número digitado não esta na tabela, reavalie e tente novamente")
-    n = "Erro"
 else:
     s = float(input("Digite o salário que essa função recebe: "))
 
