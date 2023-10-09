@@ -14,17 +14,17 @@ while l!=3:
     l +=1 
 
 if list_data[0] <= list_data_comparar[0]:
-    list_data_maior.append(list_data_comparar[0])  
-if list_data[1] <= list_data_comparar[1]:
-    list_data_maior.append(list_data_comparar[1])  
-if list_data[2] <= list_data_comparar[2]:
-    list_data_maior.append(list_data_comparar[2])  
-    
-else:
-    list_data_maior.append(list_data[0])  
-    list_data_maior.append(list_data[1])  
-    list_data_maior.append(list_data[2])  
+    if list_data[1] <= list_data_comparar[1]:
+        if list_data[2] <= list_data_comparar[2]:
+            list_data_maior.append(list_data_comparar[0])  
+            list_data_maior.append(list_data_comparar[1])  
+            list_data_maior.append(list_data_comparar[2])  
+        else:
+            list_data_maior.append(list_data[0])  
+            list_data_maior.append(list_data[1])  
+            list_data_maior.append(list_data[2])
+  
 
 
 
-print(list_data_maior)
+print(list_data_maior,)
