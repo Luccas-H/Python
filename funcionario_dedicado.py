@@ -2,9 +2,7 @@ import random
 
 pontos_total_cada = []
 media_cada = []
-list_funcionarios = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 list_pontos = []
-list_total = []
 maximo = 0 
 minimo = 0
 
