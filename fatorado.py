@@ -4,8 +4,8 @@ e = 0
 
 for i in range(n):
     i = i  + 1 
-    e= 1 + (1/i*t) + e 
     t = i*t
+    e= (1/t) + e 
 
-print(t)
-print(e)
+
+print("O total da soma é {:.5}".format(e))
