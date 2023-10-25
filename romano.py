@@ -34,3 +34,5 @@ for i in quantia:
 print(quantia)
 print(maior)
 print(igual)
+
+#Not finished yet !!!!
