@@ -1,45 +1,36 @@
 ask = str(input("Digite um número romano: "))
-rom = [1000,500,100,50,10,5,1]
-let = ['M', 'D', 'C', 'L', 'X','V', 'I']
-deco = []
-union = []
-count = []
-valores = []
-repetidos = [0]
+base_dict = {
+    "M" : 1000,
+    "D" : 500,
+    "C" : 100,
+    "L": 50,
+    "X":10,
+    "V":5,
+    "I":1
+    
+}
+list_conjunto  =[]
+list_split = []
+quantia = []
 
-s = 0
-for sim in ask: 
-    deco.append(sim)
+for i in ask: 
+    list_split.append(i)
+print(list_split)
 
+limite = len(list_split)
+for i in range(len(list_split)):
+    x = base_dict[list_split[i]]
+    quantia.append(x)
 
-for i in range(len(let)):
-    tupla = (let[i], rom[i])
-    union.append(tupla)
-
-
-for i in range(len(deco)):
-    valor = 0 
-    for j in range(len(union)):
-        if deco[i] == union[j][0]:
-            valor = valor + union[j][1]
-            count.append(valor)
-
-for r in count:
-    if r not in valores:
-        valores.append(r)
+maior = 0 
+igual = 0 
+for i in quantia:
+    if quantia.index(min(quantia)) < quantia.index(max(quantia)):
+        maior = (max(quantia) - min(quantia))
     else:
-        repetidos.append(r)
+        igual = sum(quantia)
 
-for l in range(len(valores)):
-    for h in range(len(repetidos)):
-        if repetidos[h] == valores[l]:
-            del repetidos[0]
-            s = repetidos[0] + valores[l]
-        else:
-            s = valores[l] - s
-           
 
-           
-print(s)
-
-#tentar percorrer repetidos duas vezes pra ele pegar mais de uma valor
+print(quantia)
+print(maior)
+print(igual)
