@@ -4,9 +4,9 @@ base_dict = {
     "D" : 500,
     "C" : 100,
     "L": 50,
-    "X":10,
-    "V":5,
-    "I":1
+    "X": 10,
+    "V": 5,
+    "I": 1
     
 }
 list_conjunto  =[]
@@ -25,10 +25,14 @@ for i in range(len(list_split)):
 maior = 0 
 igual = 0 
 for i in quantia:
+    print(i)
     if quantia.index(min(quantia)) < quantia.index(max(quantia)):
         maior = (max(quantia) - min(quantia))
+        print(maior)
+    
     else:
         igual = sum(quantia)
+        print(igual )
 
 
 print(quantia)
@@ -36,3 +40,10 @@ print(maior)
 print(igual)
 
 #Not finished yet !!!!
+
+"""
+elif quantia.index(min(quantia)) > quantia.index(max(quantia)):
+        maior = sum(quantia)
+        print(maior)
+
+"""
