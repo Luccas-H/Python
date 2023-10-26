@@ -24,7 +24,7 @@ media_sala = 0
 for i in range(len(notas_separadas)):
     media_sala = notas_separadas[i][0] + notas_separadas[i][1] + media_sala
 
-print("A média da sala é {:.3}".format(media_sala/6))
+print("A média da sala é {:.3}".format(media_sala/12))
 
 aprovados = []
 reprovados = []

@@ -17,4 +17,3 @@ if soma_divi == n:
 else:
     print("não é perfeito")
 
-print(c)
