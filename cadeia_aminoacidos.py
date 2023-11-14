@@ -27,10 +27,11 @@ while incremento_loop != 0:
 valores = []
 for rna in rna_trinca:    
     valores.append(rna_trinca.get(f"{rna}"))
-    def get_key (val):
-        for key, value in rna_trinca.items():
-            if val == value:
-                return key    
+
+def get_key (val):
+    for key, value in rna_trinca.items():
+        if val == value:
+            return key    
 
 chaves = []
 for valor in valores:
