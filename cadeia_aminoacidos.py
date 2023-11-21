@@ -3,7 +3,7 @@ cadeia_aminoacido = str(input("Com base nas trincas abaixo:\nUUU|CUU|UUA|AAG|UCU
 rna_trinca = {
     'UUU' : 'Phe',
     'CUU' : 'Leu',
-    'UUA' : 'Leucina',
+    'UUA' : 'Leu',
     'AAG' : 'Lisina',
     'UCU' : 'Ser',
     'UAU' : 'Tyr',
@@ -27,22 +27,16 @@ while incremento_loop != 0:
 valores = []
 for rna in rna_trinca:    
     valores.append(rna_trinca.get(f"{rna}"))
-
-def get_key (val):
-    for key, value in rna_trinca.items():
-        if val == value:
-            return key    
-
+ 
 chaves = []
-for valor in valores:
-    chaves.append(get_key(valor))
+for chave in rna_trinca.keys():
+    chaves.append(chave)
     
-
 traducao = []
 for trinca in list_trincas:
     if trinca in chaves:
         traducao.append(rna_trinca.get(trinca))
 
 for trinca_traduzida in traducao:
-    print(f"{trinca_traduzida}", end ="")
+    print(trinca_traduzida, end ="")
 
