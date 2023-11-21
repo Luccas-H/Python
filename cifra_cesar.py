@@ -17,7 +17,7 @@ for splitted_alpha in list_word:
     if splitted_alpha.isalpha():
         list_word_splitted.append(splitted_alpha)
 
-len_list_letters = len(list_letters)
+
 list_cesar = []
 timing = 3
 timing_reverse = 23
