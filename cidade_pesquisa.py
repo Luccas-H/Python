@@ -19,9 +19,5 @@ minimo = min(cidades_numeros_acidentes)
 posicao_acidente_maior = cidades_numeros_acidentes.index(max(cidades_numeros_acidentes))
 posicao_acidente_menor = cidades_numeros_acidentes.index(min(cidades_numeros_acidentes))
 
-
-
 print('A cidade com mais acidentes é {} com {} acidentes e a menor cidade é {} com {} acidentes'.format(cidades_codigos[posicao_acidente_maior],maximo,cidades_codigos[posicao_acidente_menor],minimo))
 print('A media de veiculos nas cidades é de {}'.format(sum(cidades_numeros)/3))
-
-

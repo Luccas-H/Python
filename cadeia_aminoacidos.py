@@ -39,4 +39,3 @@ for trinca in list_trincas:
 
 for trinca_traduzida in traducao:
     print(trinca_traduzida, end ="")
-

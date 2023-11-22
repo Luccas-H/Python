@@ -1,6 +1,5 @@
 binary_digits = str(input("Type a 0 or 1 sequence: "))
 
-
 list_binary = []
 for number in binary_digits:
     list_binary.append(number)
@@ -8,7 +7,6 @@ for number in binary_digits:
 count_zero = 0 
 count_one = 0 
 len_list_binary = len(list_binary)
-
 
 for zero_one in list_binary:
     if count_one <= 2:
@@ -26,10 +24,3 @@ if count_one > 2 or count_zero > 2:
     print("This code is invalid")
 else:
     print("This code is valid")
-   
-    
-
-
-
-
-
