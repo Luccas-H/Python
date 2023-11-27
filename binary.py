@@ -6,7 +6,6 @@ for number in binary_digits:
 
 count_zero = 0 
 count_one = 0 
-len_list_binary = len(list_binary)
 
 for zero_one in list_binary:
     if count_one <= 2:
